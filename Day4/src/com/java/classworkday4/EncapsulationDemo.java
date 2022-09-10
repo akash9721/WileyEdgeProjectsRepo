@@ -22,7 +22,7 @@ class Employee {
 
 }
 
-public class Company {
+public class EncapsulationDemo {
 
 	public static void main(String[] args) {
 		Employee e = new Employee();
