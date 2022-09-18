@@ -9,6 +9,7 @@ public enum AccountType {
 	}
 
 	public int getBalance() {
+
 		return openingBal;
 	}
 

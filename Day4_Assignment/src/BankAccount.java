@@ -17,7 +17,6 @@ public class BankAccount {
 	}
 
 	public void displayTotalBalance() {
-		// TODO Auto-generated method stub
 		System.out.println("the total balance in the bank is: " + totalBalance);
 
 	}

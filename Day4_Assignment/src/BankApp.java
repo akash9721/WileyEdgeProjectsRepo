@@ -7,7 +7,7 @@ public class BankApp {
 		BankAccount b2 = new BankAccount(554, "kumar", at.getBalance());
 		BankAccount b3 = new BankAccount(234, "prabh", at.getBalance());
 		b1.displayTotalBalance();
-		b1.depositAmount(1000);
+//		b1.depositAmount(1000);
 		b1.depositAmount(2000);
 		b1.depositAmount(3000);
 		b2.depositAmount(1000);
