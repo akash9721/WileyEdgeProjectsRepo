@@ -42,6 +42,9 @@ public class CustomerApp {
 		System.out.println("Display the details of the customers in the given customerAreaCode");
 		cu.displayWithSameAreaCode(cur, cusAreaCode);
 		System.out.println("-----------------------------------------------------------------------");
+		cu.serialization(cur);
+		cu.deSerialized(cur);
+		System.out.println("-----------------------------------------------------------------------");
 		System.out.println("Display the details of the customers maped with customerAreaCode");
 		cu.mapDataWithSameAreaCode(cur, mpl);
 
