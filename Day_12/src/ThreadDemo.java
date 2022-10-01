@@ -2,7 +2,7 @@
 public class ThreadDemo {
 	public static void main(String[] args) {
 		/*
-		 * using Anonmous inner class:create the body of the class
+		 * using Anonymous inner class:create the body of the class
 		 */
 		Runnable ri = () -> {
 			// this is body of thread

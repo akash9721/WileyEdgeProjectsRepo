@@ -14,7 +14,7 @@ public class ConsumerDemo {
 //		cm.accept(str);
 
 		// using lambda expression
-		Consumer<String> con = (data) -> System.out.println("welcome to " + data);
+		Consumer<String> con = (data) -> System.out.println("welcome back" + data);
 		con.accept(str);
 	}
 

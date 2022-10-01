@@ -3,7 +3,7 @@ import java.util.function.Predicate;
 public class PredicateDemo {
 	public static void main(String[] args) {
 		// using predicate anonymous class
-		String str = "Akash";
+		String str = "Akashkumar";
 //		Predicate<String> pc = new Predicate<String>() {
 //
 //			@Override

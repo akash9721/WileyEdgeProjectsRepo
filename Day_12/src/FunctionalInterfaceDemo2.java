@@ -25,6 +25,7 @@ public class FunctionalInterfaceDemo2 {
 //		};
 //		abc.show();
 
+		// using lambda function
 		ABC ab = () -> System.out.println("heloo");
 		ab.show();
 
