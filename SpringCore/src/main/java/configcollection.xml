@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/cntext"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- class="com.springcore.collections.Employee"  -->
+    
+<!--     <bean class="com.springcore.collections.Employee" name="employee1">
+        <property name="empName" value="Akash"/>
+        <property name="phones">
+        <list>
+           <value>1234567</value>
+           <value>12234467</value>
+           <value>12566787</value>
+           <value>12341234</value>
+           <value>12333224</value>
+        </list>
+        </property>
+         <property name="address">
+        <set>
+           <value>KOL</value>
+           <value>Delhi</value>
+           <value>Lucknow</value>
+           <value>KOTA</value>
+           <value>CHD</value>
+        </set>
+        </property>
+         <property name="course">
+         <map>
+          <entry key="CPP" value="2month"/>
+          <entry key="Java" value="3month"/>
+          <entry key="python" value="4month"/>
+         </map>
+        </property>
+    </bean> -->
+    
+    <bean class="com.springcore.collections.Car" id="car1">
+       <constructor-arg value="123" type="double"/>    <!-- by default this will take string string value -->
+       <constructor-arg value="80" type="double"/>    
+    </bean>
+    
+</beans>

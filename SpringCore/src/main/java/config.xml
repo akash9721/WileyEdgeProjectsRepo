@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/cntext"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+    
+     <!--using getter injection  -->
+     <!-- this is first bean -->
+     <!--   <bean class="com.springcore.Student" name="Student1"> -->
+       <!-- <property name="StudentId">    
+            <value>123</value>
+       </property>  
+       <property name="StudentName">
+       <value>AKASH</value>
+       </property>
+       <property name="studentAddress">
+       <value>Delhi</value>
+       </property> -->
+       
+    <!-- <property name="studentId" value="123"/>
+       <property name="studentName" value="Akansha"/>
+       <property name="studentAddress" value="Delhi"/>
+    </bean> -->
+    
+    <!--this is second bean  -->
+    <!-- <bean class="com.springcore.Student" name="Student2">
+       <property name="studentId" value="234"/>
+       <property name="studentName" value="Akash"/>
+       <property name="studentAddress" value="UP"/>
+    </bean> -->
+    
+    <!-- using constructor injection -->
+    <bean class="com.springcore.Student" id="st1">
+    <constructor-arg value="234"/>
+    <constructor-arg value="AKASH"/>
+    <constructor-arg value="UP"/>
+    </bean>
+    
+</beans>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/cntext"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="com.springcore.collections.Book" id="book1">
+           <constructor-arg value="123"/>
+           <constructor-arg value="Harry-Porter"/>
+           <constructor-arg value="5000"/>
+    </bean>
+    <bean id="book2" class="com.springcore.collections.Book">
+           <constructor-arg value="456"/>
+           <constructor-arg value="Rich-daad Poor-daad"/>
+           <constructor-arg value="3000"/>
+    </bean>
+    <bean id="book3" class="com.springcore.collections.Book">
+           <constructor-arg value="456"/>
+           <constructor-arg value="Rich-daad Poor-daad"/>
+           <constructor-arg value="3000"/>
+    </bean>
+    
+    <bean class="com.springcore.collections.BookLibraray" id="booklist">
+    <property name="books">
+        <list>
+             <ref bean="book1"/>
+             <ref bean="book2"/>
+             <ref bean="book3"/>
+        </list>
+    </property>
+    </bean>
+    
+    <bean class="com.springcore.collections.BookSetLibrary" id="bookset">
+    <property name="books">
+        <set>
+             <ref bean="book1"/>
+             <ref bean="book2"/>
+        </set>
+    </property>
+    </bean>
+    
+    <bean class="com.springcore.collections.BookMapLibrary" id="bookmap">
+    <property name="books">
+        <map>
+             <entry key="COMIC" value-ref="book1"/>
+             <entry key="FINANCIAL" value-ref="book2"/>
+             <entry key="FINANCIAL" value-ref="book3"/>
+        </map>
+    </property>
+    </bean>
+    
+    <bean class="com.springcore.collections.BookMapStringList" id="bookmaplist">
+    <property name="books">
+        <map>
+             <entry key="COMIC">
+               <list>
+                 <ref bean="book1"/>
+                 <ref bean="book2"/>
+               </list>
+             </entry>
+             <entry key="FINANCIAL">
+             <list>
+                 <ref bean="book1"/>
+                 <ref bean="book2"/>
+               </list>
+             </entry>
+             <entry key="FINANCIAL">
+             <list>
+                 <ref bean="book1"/>
+                 <ref bean="book2"/>
+               </list>
+             </entry>
+        </map>
+    </property>
+    </bean>
+    
+</beans>
