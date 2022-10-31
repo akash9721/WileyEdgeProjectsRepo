@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            background-color: cyan;
+        }
+        #outer{
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+        #inner{
+            padding: 10px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50px;
+            width: 400px;
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <h1>Simple login Form</h1>
+            <form>
+                <label for="fname">First Name:</label></br>
+                <input type="text" id="fname" name="firstname"></br>
+                <label for="lname">Last Name:</label></br>
+                <input type="text" id="lname" name="lastname"></br><br>
+        
+                <label><b>Gender</b></label><br>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label><br><br>
+        
+                <label><b>Subject choice</b></label><br>
+                <input type="checkbox" id="eng">
+                <label for="eng">English</label><br>
+                <input type="checkbox" id="hin">
+                <label for="hin">Hindi</label><br>
+                <input type="checkbox" id="sci">
+                <label for="sci">Science</label><br>
+                <input type="checkbox" id="math">
+                <label for="math">Maths</label><br><br>
+        
+                <label><b>Color from drop down</b></label><br>
+                <label>Color</label><br>
+                <select>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                    <option>Brown</option>
+                </select>
+                <br><br>
+                <input type="submit" id="button" onclick="fun()">
+            </form>
+        </div>
+    </div>
+  
+    <script>
+       function fun(){
+        alert("submitted")
+       }
+    </script>
+</body>
+</html>
